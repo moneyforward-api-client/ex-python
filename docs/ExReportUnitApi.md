@@ -1,4 +1,4 @@
-# mfexapiclient.ExReportUnitApi
+# moneyforward_ex.ExReportUnitApi
 
 All URIs are relative to *https://expense.moneyforward.com*
 
@@ -23,10 +23,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -34,27 +34,27 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExReportUnitApi(api_client)
+    api_instance = moneyforward_ex.ExReportUnitApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_report_unit_id = 'ex_report_unit_id_example' # str | 集計id
-    page = 56 # int | ページ番号 (optional)
-    query_object_dept_id = 'query_object_dept_id_example' # str | 部門idでフィルタ (optional)
-    query_object_project_code_id = 'query_object_project_code_id_example' # str | プロジェクトidでフィルタ (optional)
-    query_object_ex_item_id = 'query_object_ex_item_id_example' # str | 経費科目idでフィルタ (optional)
-    query_object_office_member_id = 'query_object_office_member_id_example' # str | メンバーidでフィルタ (optional)
-    query_object_number = 56 # int | 経費明細番号でフィルタ (optional)
-    query_object_number_from = 56 # int | 指定番号以上の経費明細番号でフィルタ (optional)
-    query_object_number_to = 56 # int | 指定番号以下の経費明細番号でフィルタ (optional)
-    query_object_value_min = 3.4 # float | 金額下限でフィルタ (optional)
-    query_object_value_max = 3.4 # float | 金額上限でフィルタ (optional)
-    query_object_is_exported = True # bool | 仕訳出力済みかどうかでフィルタ (optional)
-    query_object_is_reported = True # bool | 経費申請に含まれるかどうかでフィルタ (optional)
-    query_object_approved_at_from = '2013-10-20T19:20:30+01:00' # datetime | 申請の承認時刻について指定時刻以降でフィルタ ex.`2018-09-30 00:00:00 +0900` (optional)
-    query_object_approved_at_to = '2013-10-20T19:20:30+01:00' # datetime | 申請の承認時刻について指定時刻以前でフィルタ ex.`2018-09-30 23:59:59 +0900` (optional)
-    query_object_recognized_at_from = '2013-10-20' # date | 日付に指定日付以降でフィルタ ex.`2018-09-30` (optional)
-    query_object_recognized_at_to = '2013-10-20' # date | 日付に指定日付以前でフィルタ ex.`2018-09-30` (optional)
+ex_report_unit_id = 'ex_report_unit_id_example' # str | 集計id
+page = 56 # int | ページ番号 (optional)
+query_object_dept_id = 'query_object_dept_id_example' # str | 部門idでフィルタ (optional)
+query_object_project_code_id = 'query_object_project_code_id_example' # str | プロジェクトidでフィルタ (optional)
+query_object_ex_item_id = 'query_object_ex_item_id_example' # str | 経費科目idでフィルタ (optional)
+query_object_office_member_id = 'query_object_office_member_id_example' # str | メンバーidでフィルタ (optional)
+query_object_number = 56 # int | 経費明細番号でフィルタ (optional)
+query_object_number_from = 56 # int | 指定番号以上の経費明細番号でフィルタ (optional)
+query_object_number_to = 56 # int | 指定番号以下の経費明細番号でフィルタ (optional)
+query_object_value_min = 3.4 # float | 金額下限でフィルタ (optional)
+query_object_value_max = 3.4 # float | 金額上限でフィルタ (optional)
+query_object_is_exported = True # bool | 仕訳出力済みかどうかでフィルタ (optional)
+query_object_is_reported = True # bool | 経費申請に含まれるかどうかでフィルタ (optional)
+query_object_approved_at_from = '2013-10-20T19:20:30+01:00' # datetime | 申請の承認時刻について指定時刻以降でフィルタ ex.`2018-09-30 00:00:00 +0900` (optional)
+query_object_approved_at_to = '2013-10-20T19:20:30+01:00' # datetime | 申請の承認時刻について指定時刻以前でフィルタ ex.`2018-09-30 23:59:59 +0900` (optional)
+query_object_recognized_at_from = '2013-10-20' # date | 日付に指定日付以降でフィルタ ex.`2018-09-30` (optional)
+query_object_recognized_at_to = '2013-10-20' # date | 日付に指定日付以前でフィルタ ex.`2018-09-30` (optional)
 
     try:
         # 経費集計に含まれる経費明細リストを返す
@@ -123,10 +123,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -134,11 +134,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExReportUnitApi(api_client)
+    api_instance = moneyforward_ex.ExReportUnitApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    id = 'id_example' # str | id
+id = 'id_example' # str | id
 
     try:
         # 集計を返す
@@ -191,10 +191,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -202,11 +202,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExReportUnitApi(api_client)
+    api_instance = moneyforward_ex.ExReportUnitApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_report_unit_id = 'ex_report_unit_id_example' # str | 集計id
+ex_report_unit_id = 'ex_report_unit_id_example' # str | 集計id
 
     try:
         # 集計に対応する仕訳を返す
@@ -259,10 +259,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -270,11 +270,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExReportUnitApi(api_client)
+    api_instance = moneyforward_ex.ExReportUnitApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    page = 56 # int | ページ番号 (optional)
+page = 56 # int | ページ番号 (optional)
 
     try:
         # 集計のリストを返す

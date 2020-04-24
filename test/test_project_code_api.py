@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import mfexapiclient
-from mfexapiclient.api.project_code_api import ProjectCodeApi  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.api.project_code_api import ProjectCodeApi  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 
 class TestProjectCodeApi(unittest.TestCase):
     """ProjectCodeApi unit test stubs"""
 
     def setUp(self):
-        self.api = mfexapiclient.api.project_code_api.ProjectCodeApi()  # noqa: E501
+        self.api = moneyforward_ex.api.project_code_api.ProjectCodeApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -1,4 +1,4 @@
-# mfexapiclient.ProjectCodeApi
+# moneyforward_ex.ProjectCodeApi
 
 All URIs are relative to *https://expense.moneyforward.com*
 
@@ -24,10 +24,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -35,11 +35,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ProjectCodeApi(api_client)
+    api_instance = moneyforward_ex.ProjectCodeApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    unknown_base_type = mfexapiclient.UNKNOWN_BASE_TYPE() # UNKNOWN_BASE_TYPE | プロジェクトのパラメータ
+unknown_base_type = moneyforward_ex.UNKNOWN_BASE_TYPE() # UNKNOWN_BASE_TYPE | プロジェクトのパラメータ
 
     try:
         # プロジェクトコードを作成する
@@ -93,10 +93,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -104,11 +104,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ProjectCodeApi(api_client)
+    api_instance = moneyforward_ex.ProjectCodeApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    id = 'id_example' # str | id
+id = 'id_example' # str | id
 
     try:
         # プロジェクトコードを削除する
@@ -161,10 +161,10 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -172,12 +172,12 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ProjectCodeApi(api_client)
+    api_instance = moneyforward_ex.ProjectCodeApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    id = 'id_example' # str | id
-    page = 56 # int | ページ番号 (optional)
+id = 'id_example' # str | id
+page = 56 # int | ページ番号 (optional)
 
     try:
         # プロジェクトコードを返す
@@ -231,10 +231,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -242,14 +242,14 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ProjectCodeApi(api_client)
+    api_instance = moneyforward_ex.ProjectCodeApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    page = 56 # int | ページ番号 (optional)
-    query_object_search_keyword = 'query_object_search_keyword_example' # str | プロジェクト名称またはプロジェクトコードで前方一致検索する (optional)
-    query_object_name = 'query_object_name_example' # str | プロジェクト名称で前方一致検索する (optional)
-    query_object_code = 'query_object_code_example' # str | プロジェクトコードで前方一致検索する (optional)
+page = 56 # int | ページ番号 (optional)
+query_object_search_keyword = 'query_object_search_keyword_example' # str | プロジェクト名称またはプロジェクトコードで前方一致検索する (optional)
+query_object_name = 'query_object_name_example' # str | プロジェクト名称で前方一致検索する (optional)
+query_object_code = 'query_object_code_example' # str | プロジェクトコードで前方一致検索する (optional)
 
     try:
         # プロジェクト一覧を返す
@@ -305,10 +305,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -316,12 +316,12 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ProjectCodeApi(api_client)
+    api_instance = moneyforward_ex.ProjectCodeApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    id = 'id_example' # str | id
-    unknown_base_type = mfexapiclient.UNKNOWN_BASE_TYPE() # UNKNOWN_BASE_TYPE | プロジェクトのパラメータ
+id = 'id_example' # str | id
+unknown_base_type = moneyforward_ex.UNKNOWN_BASE_TYPE() # UNKNOWN_BASE_TYPE | プロジェクトのパラメータ
 
     try:
         # プロジェクトコードを更新する

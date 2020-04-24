@@ -1,4 +1,4 @@
-# mfexapiclient.MfFileApi
+# moneyforward_ex.MfFileApi
 
 All URIs are relative to *https://expense.moneyforward.com*
 
@@ -22,10 +22,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -33,11 +33,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.MfFileApi(api_client)
+    api_instance = moneyforward_ex.MfFileApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_transaction_id = 'ex_transaction_id_example' # str | 経費明細id
+ex_transaction_id = 'ex_transaction_id_example' # str | 経費明細id
 
     try:
         # 経費明細に紐づく添付ファイルを返す
@@ -90,10 +90,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -101,11 +101,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.MfFileApi(api_client)
+    api_instance = moneyforward_ex.MfFileApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_transaction_id = 'ex_transaction_id_example' # str | 経費明細id
+ex_transaction_id = 'ex_transaction_id_example' # str | 経費明細id
 
     try:
         # 経費明細に紐づく添付ファイルを返す
@@ -158,10 +158,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -169,11 +169,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.MfFileApi(api_client)
+    api_instance = moneyforward_ex.MfFileApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    e_doc_id = 'e_doc_id_example' # str | e_doc id
+e_doc_id = 'e_doc_id_example' # str | e_doc id
 
     try:
         # 電子帳簿保存法書類データに紐づく画像ファイルを返す

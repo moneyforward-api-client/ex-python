@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import mfexapiclient
-from mfexapiclient.models.office_member_update_input import OfficeMemberUpdateInput  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.models.office_member_update_input import OfficeMemberUpdateInput  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 class TestOfficeMemberUpdateInput(unittest.TestCase):
     """OfficeMemberUpdateInput unit test stubs"""
@@ -33,17 +33,17 @@ class TestOfficeMemberUpdateInput(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = mfexapiclient.models.office_member_update_input.OfficeMemberUpdateInput()  # noqa: E501
+        # model = moneyforward_ex.models.office_member_update_input.OfficeMemberUpdateInput()  # noqa: E501
         if include_optional :
             return OfficeMemberUpdateInput(
                 name = '0',
                 number = '0',
                 permission_role_id = 201,
                 depts_attributes = [
-                    mfexapiclient.models.office_member_create_input_depts_attributes.OfficeMemberCreateInput_depts_attributes(
+                    moneyforward_ex.models.office_member_create_input_depts_attributes.OfficeMemberCreateInput_depts_attributes(
                         id = '0', )
                     ],
-                position_attributes = mfexapiclient.models.office_member_create_input_position_attributes.OfficeMemberCreateInput_position_attributes(
+                position_attributes = moneyforward_ex.models.office_member_create_input_position_attributes.OfficeMemberCreateInput_position_attributes(
                     id = '0', )
             )
         else :

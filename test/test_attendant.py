@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import mfexapiclient
-from mfexapiclient.models.attendant import Attendant  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.models.attendant import Attendant  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 class TestAttendant(unittest.TestCase):
     """Attendant unit test stubs"""
@@ -33,7 +33,7 @@ class TestAttendant(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = mfexapiclient.models.attendant.Attendant()  # noqa: E501
+        # model = moneyforward_ex.models.attendant.Attendant()  # noqa: E501
         if include_optional :
             return Attendant(
                 id = '0',

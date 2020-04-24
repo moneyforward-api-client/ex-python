@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import mfexapiclient
-from mfexapiclient.models.ex_journal_branch_side import ExJournalBranchSide  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.models.ex_journal_branch_side import ExJournalBranchSide  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 class TestExJournalBranchSide(unittest.TestCase):
     """ExJournalBranchSide unit test stubs"""
@@ -33,7 +33,7 @@ class TestExJournalBranchSide(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = mfexapiclient.models.ex_journal_branch_side.ExJournalBranchSide()  # noqa: E501
+        # model = moneyforward_ex.models.ex_journal_branch_side.ExJournalBranchSide()  # noqa: E501
         if include_optional :
             return ExJournalBranchSide(
                 item_id = '0',
@@ -45,22 +45,22 @@ class TestExJournalBranchSide(unittest.TestCase):
                 side = 1,
                 value = 10000,
                 excise_value = 800,
-                item = mfexapiclient.models.item.Item(
+                item = moneyforward_ex.models.item.Item(
                     id = '0',
                     excise_id = '0',
                     name = '勘定科目名称',
                     code = 'item-code-xxx', ),
-                sub_item = mfexapiclient.models.item.Item(
+                sub_item = moneyforward_ex.models.item.Item(
                     id = '0',
                     excise_id = '0',
                     name = '勘定科目名称',
                     code = 'item-code-xxx', ),
-                excise = mfexapiclient.models.excise.Excise(
+                excise = moneyforward_ex.models.excise.Excise(
                     id = '0',
                     long_name = '課税仕入 8%',
                     code = '税区分コード',
                     rate = 0.08, ),
-                dept = mfexapiclient.models.dept.Dept(
+                dept = moneyforward_ex.models.dept.Dept(
                     id = '0',
                     name = '営業部',
                     memo = '0',
@@ -69,7 +69,7 @@ class TestExJournalBranchSide(unittest.TestCase):
                     is_active = True,
                     parent_id = '0',
                     root_id = '0', ),
-                project_code = mfexapiclient.models.project_code.ProjectCode(
+                project_code = moneyforward_ex.models.project_code.ProjectCode(
                     id = '0',
                     name = '本社移転プロジェクト',
                     code = 'project-code-001',
@@ -77,7 +77,7 @@ class TestExJournalBranchSide(unittest.TestCase):
                     is_active = True,
                     parent_id = '0',
                     root_id = '0', ),
-                ex_destination = mfexapiclient.models.ex_destination.ExDestination(
+                ex_destination = moneyforward_ex.models.ex_destination.ExDestination(
                     id = '0',
                     name = 'A商店',
                     code = 'A001',

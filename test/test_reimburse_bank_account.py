@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import mfexapiclient
-from mfexapiclient.models.reimburse_bank_account import ReimburseBankAccount  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.models.reimburse_bank_account import ReimburseBankAccount  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 class TestReimburseBankAccount(unittest.TestCase):
     """ReimburseBankAccount unit test stubs"""
@@ -33,7 +33,7 @@ class TestReimburseBankAccount(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = mfexapiclient.models.reimburse_bank_account.ReimburseBankAccount()  # noqa: E501
+        # model = moneyforward_ex.models.reimburse_bank_account.ReimburseBankAccount()  # noqa: E501
         if include_optional :
             return ReimburseBankAccount(
                 id = '0',
@@ -41,11 +41,11 @@ class TestReimburseBankAccount(unittest.TestCase):
                 number = '1234567',
                 holder_name = '山田　太郎',
                 holder_name_kana = 'ﾔﾏﾀﾞ ﾀﾛｳ',
-                bank = mfexapiclient.models.bank.Bank(
+                bank = moneyforward_ex.models.bank.Bank(
                     code = '0001',
                     name = 'みずほ銀行',
                     name_kana = 'ﾐｽﾞﾎ', ),
-                bank_branch = mfexapiclient.models.bank_branch.BankBranch(
+                bank_branch = moneyforward_ex.models.bank_branch.BankBranch(
                     code = '093',
                     name = '本店',
                     name_kana = 'ﾎﾝﾃﾝ', )

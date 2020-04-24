@@ -1,4 +1,4 @@
-# mfexapiclient.ExJournalApi
+# moneyforward_ex.ExJournalApi
 
 All URIs are relative to *https://expense.moneyforward.com*
 
@@ -24,10 +24,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -35,13 +35,13 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExJournalApi(api_client)
+    api_instance = moneyforward_ex.ExJournalApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    page = 56 # int | ページ番号 (optional)
-    query_object_recognized_at_from = '2013-10-20' # date | 仕訳の計上日について指定日以降でフィルタ (recognized_at_to との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
-    query_object_recognized_at_to = '2013-10-20' # date | 仕訳の計上日について指定日以前でフィルタ (recognized_at_from との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
+page = 56 # int | ページ番号 (optional)
+query_object_recognized_at_from = '2013-10-20' # date | 仕訳の計上日について指定日以降でフィルタ (recognized_at_to との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
+query_object_recognized_at_to = '2013-10-20' # date | 仕訳の計上日について指定日以前でフィルタ (recognized_at_from との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
 
     try:
         # 事業所全体の申請に紐づく仕訳リストを返す
@@ -96,10 +96,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -107,13 +107,13 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExJournalApi(api_client)
+    api_instance = moneyforward_ex.ExJournalApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    page = 56 # int | ページ番号 (optional)
-    query_object_recognized_at_from = '2013-10-20' # date | 仕訳の計上日について指定日以降でフィルタ (recognized_at_to との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
-    query_object_recognized_at_to = '2013-10-20' # date | 仕訳の計上日について指定日以前でフィルタ (recognized_at_from との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
+page = 56 # int | ページ番号 (optional)
+query_object_recognized_at_from = '2013-10-20' # date | 仕訳の計上日について指定日以降でフィルタ (recognized_at_to との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
+query_object_recognized_at_to = '2013-10-20' # date | 仕訳の計上日について指定日以前でフィルタ (recognized_at_from との期間は最大で 3 ヶ月) ex.`2019-09-30` (optional)
 
     try:
         # 事業所全体の明細に紐づく仕訳リストを返す
@@ -168,10 +168,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -179,11 +179,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExJournalApi(api_client)
+    api_instance = moneyforward_ex.ExJournalApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_report_id = 'ex_report_id_example' # str | 申請id
+ex_report_id = 'ex_report_id_example' # str | 申請id
 
     try:
         # 申請に対応する仕訳を返す
@@ -236,10 +236,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -247,11 +247,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExJournalApi(api_client)
+    api_instance = moneyforward_ex.ExJournalApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_report_unit_id = 'ex_report_unit_id_example' # str | 集計id
+ex_report_unit_id = 'ex_report_unit_id_example' # str | 集計id
 
     try:
         # 集計に対応する仕訳を返す
@@ -304,10 +304,10 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -315,11 +315,11 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.ExJournalApi(api_client)
+    api_instance = moneyforward_ex.ExJournalApi(api_client)
     office_id = 'office_id_example' # str | 事業所id
-    ex_transaction_id = 'ex_transaction_id_example' # str | 経費明細id
+ex_transaction_id = 'ex_transaction_id_example' # str | 経費明細id
 
     try:
         # 経費明細に対応する仕訳を返す

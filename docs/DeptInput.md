@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | 部門名称 | [optional] 
+**name** | **str** | 部門名称 | 
 **memo** | **str** | メモ | [optional] 
 **code** | **str** | コード | [optional] 
 **disp_order** | **int** | 表示優先順（昇順） | [optional] [default to 0]

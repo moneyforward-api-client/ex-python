@@ -8,7 +8,7 @@ stages:
   script:
    - pip install -r requirements.txt
    - pip install -r test-requirements.txt
-   - pytest --cov=mfexapiclient
+   - pytest --cov=moneyforward_ex
 
 nosetest-2.7:
   extends: .nosetest

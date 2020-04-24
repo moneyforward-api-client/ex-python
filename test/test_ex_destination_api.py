@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import mfexapiclient
-from mfexapiclient.api.ex_destination_api import ExDestinationApi  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.api.ex_destination_api import ExDestinationApi  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 
 class TestExDestinationApi(unittest.TestCase):
     """ExDestinationApi unit test stubs"""
 
     def setUp(self):
-        self.api = mfexapiclient.api.ex_destination_api.ExDestinationApi()  # noqa: E501
+        self.api = moneyforward_ex.api.ex_destination_api.ExDestinationApi()  # noqa: E501
 
     def tearDown(self):
         pass

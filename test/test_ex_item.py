@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import mfexapiclient
-from mfexapiclient.models.ex_item import ExItem  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.models.ex_item import ExItem  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 class TestExItem(unittest.TestCase):
     """ExItem unit test stubs"""
@@ -33,7 +33,7 @@ class TestExItem(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = mfexapiclient.models.ex_item.ExItem()  # noqa: E501
+        # model = moneyforward_ex.models.ex_item.ExItem()  # noqa: E501
         if include_optional :
             return ExItem(
                 id = '0',
@@ -43,18 +43,18 @@ class TestExItem(unittest.TestCase):
                 item_id = '0',
                 sub_item_id = '0',
                 default_excise_id = '0',
-                item = mfexapiclient.models.item.Item(
+                item = moneyforward_ex.models.item.Item(
                     id = '0',
                     excise_id = '0',
                     name = '勘定科目名称',
                     code = 'item-code-xxx', ),
-                sub_item = mfexapiclient.models.sub_item.SubItem(
+                sub_item = moneyforward_ex.models.sub_item.SubItem(
                     id = '0',
                     item_id = '0',
                     excise_id = '0',
                     name = '補助勘定科目名称',
                     code = 'sub-item-code-xxx', ),
-                default_dr_excise = mfexapiclient.models.excise.Excise(
+                default_dr_excise = moneyforward_ex.models.excise.Excise(
                     id = '0',
                     long_name = '課税仕入 8%',
                     code = '税区分コード',

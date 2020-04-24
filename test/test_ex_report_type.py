@@ -15,9 +15,9 @@ from __future__ import absolute_import
 import unittest
 import datetime
 
-import mfexapiclient
-from mfexapiclient.models.ex_report_type import ExReportType  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.models.ex_report_type import ExReportType  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 class TestExReportType(unittest.TestCase):
     """ExReportType unit test stubs"""
@@ -33,7 +33,7 @@ class TestExReportType(unittest.TestCase):
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = mfexapiclient.models.ex_report_type.ExReportType()  # noqa: E501
+        # model = moneyforward_ex.models.ex_report_type.ExReportType()  # noqa: E501
         if include_optional :
             return ExReportType(
                 id = '0',

@@ -1,4 +1,4 @@
-# mfexapiclient.OfficeApi
+# moneyforward_ex.OfficeApi
 
 All URIs are relative to *https://expense.moneyforward.com*
 
@@ -20,10 +20,10 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import mfexapiclient
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.rest import ApiException
 from pprint import pprint
-configuration = mfexapiclient.Configuration()
+configuration = moneyforward_ex.Configuration()
 # Configure OAuth2 access token for authorization: mf_expense_oauth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
@@ -31,9 +31,9 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 configuration.host = "https://expense.moneyforward.com"
 
 # Enter a context with an instance of the API client
-with mfexapiclient.ApiClient(configuration) as api_client:
+with moneyforward_ex.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mfexapiclient.OfficeApi(api_client)
+    api_instance = moneyforward_ex.OfficeApi(api_client)
     page = 56 # int | ページ番号 (optional)
 
     try:

@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import mfexapiclient
-from mfexapiclient.api.office_api import OfficeApi  # noqa: E501
-from mfexapiclient.rest import ApiException
+import moneyforward_ex
+from moneyforward_ex.api.office_api import OfficeApi  # noqa: E501
+from moneyforward_ex.rest import ApiException
 
 
 class TestOfficeApi(unittest.TestCase):
     """OfficeApi unit test stubs"""
 
     def setUp(self):
-        self.api = mfexapiclient.api.office_api.OfficeApi()  # noqa: E501
+        self.api = moneyforward_ex.api.office_api.OfficeApi()  # noqa: E501
 
     def tearDown(self):
         pass
